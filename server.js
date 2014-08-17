@@ -31,7 +31,6 @@ router.get('/', function(req, res) {
 
 router.route('/pais')
    .post(function(req, res) {
-      console.log(req.body);
       var pais = new Pais();
       pais.nome = req.body.nome;
       pais.sigla = req.body.sigla;
@@ -57,12 +56,11 @@ router.route('/pais')
 //cidade
 router.route('/cidade')
    .post(function(req, res) {
-      console.log(req.body);
       var cidade = new Cidade();
       cidade.nome = req.body.nome;
       cidade.codigoibge = req.body.codigoibge;
     
-      pais.save(function(err) {
+      cidade.save(function(err) {
          if (err) {
 	    res.send(err);
          }
@@ -82,7 +80,6 @@ router.route('/cidade')
 //pessoa
 router.route('/pessoa')
    .post(function(req, res) {
-      console.log(req.body);
       var pessoa = new Pessoa();
       pessoa.nome = req.body.nome;
       pessoa.tipopessoa = req.body.tipopessoa;
@@ -119,8 +116,7 @@ router.route('/pessoa')
 //satisfacao
 router.route('/satisfacao')
    .post(function(req, res) {
-      console.log(req.body);
-      var satisfacao = new Satisfacao();
+	  var satisfacao = new Satisfacao();
       satisfacao.curtir = req.body.curtir;
       satisfacao.data = req.body.data;
     
@@ -144,7 +140,6 @@ router.route('/satisfacao')
 //tipopessoa
 router.route('/tipopessoa')
    .post(function(req, res) {
-      console.log(req.body);
       var tipopessoa = new Tipopessoa();
       tipopessoa.descricao = req.body.descricao;
       tipopessoa.ativo = req.body.ativo;
@@ -169,7 +164,6 @@ router.route('/tipopessoa')
 //estado
 router.route('/estado')
    .post(function(req, res) {
-      console.log(req.body);
       var estado = new Estado();
       estado.nome = req.body.nome;
       estado.sigla = req.body.sigla;
