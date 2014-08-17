@@ -5,7 +5,7 @@ var mongoose   = require('mongoose');
 
 var Pessoa     = require('./app/models/pessoa');
 var TipoPessoa = require('./app/models/tipopessoa');
-var Satisfacao = require('./app/models/tipopessoa');
+var Satisfacao = require('./app/models/satisfacao');
 var Cidade = require('./app/models/cidade');
 var Uf = require('./app/models/uf');
 var Pais = require('./app/models/pais');
@@ -143,7 +143,7 @@ router.route('/satisfacao')
 //tipopessoa
 router.route('/tipopessoa')
    .post(function(req, res) {
-      var tipopessoa = new Tipopessoa();
+      var tipopessoa = new TipoPessoa();
       tipopessoa.descricao = req.body.descricao;
       tipopessoa.ativo = req.body.ativo;
     
@@ -156,7 +156,7 @@ router.route('/tipopessoa')
       });		
    })
    .get(function(req, res) {
-      Tipopessoa.find(function(err, tipopessoa) {
+      TipoPessoa.find(function(err, tipopessoa) {
         if (err) {
           res.send(err);
         }
@@ -166,13 +166,13 @@ router.route('/tipopessoa')
    });
 
 //estado
-router.route('/estado')
+router.route('/uf')
    .post(function(req, res) {
-      var estado = new Estado();
-      estado.nome = req.body.nome;
-      estado.sigla = req.body.sigla;
+      var uf = new Uf();
+      uf.nome = req.body.nome;
+      uf.sigla = req.body.sigla;
     
-      estado.save(function(err) {
+      uf.save(function(err) {
         if (err) {
           res.send(err);
         }
@@ -181,15 +181,15 @@ router.route('/estado')
       });		
    })
    .get(function(req, res) {
-      Estado.find(function(err, estado) {
+      Uf.find(function(err, uf) {
         if (err) {
           res.send(err);
         }
 
-        res.json(estado);
+        res.json(uf);
       });
    });
-   
+
 app.use('/eCarona', router);
 
 app.listen(port);
