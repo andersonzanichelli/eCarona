@@ -6,7 +6,7 @@ var mongoose   = require('mongoose');
 var Pessoa     = require('./app/models/pessoa');
 var Satisfacao = require('./app/models/satisfacao');
 var Uf = require('./app/models/uf');
-var TipoCarona = require('./app/models/tipoCarona');
+var TipoCarona = require('./app/models/tipocarona');
 
 mongoose.connect('mongodb://localhost:27017/local');
 
