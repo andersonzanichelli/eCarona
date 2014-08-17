@@ -6,6 +6,7 @@ var PessoaSchema = new Schema({
 	nome: String,
 	curtidas: Number,
 	endereco: String,
+	telefone: String,
 	tipoServico: Number, // ofereco / solicito
 	bairro: String,
 	cidade: String,
