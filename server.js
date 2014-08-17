@@ -4,11 +4,9 @@ var bodyParser = require('body-parser');
 var mongoose   = require('mongoose');
 
 var Pessoa     = require('./app/models/pessoa');
-var TipoPessoa = require('./app/models/tipopessoa');
 var Satisfacao = require('./app/models/satisfacao');
-var Cidade = require('./app/models/cidade');
 var Uf = require('./app/models/uf');
-var Pais = require('./app/models/pais');
+var TipoCarona = require('./app/models/tipoCarona');
 
 mongoose.connect('mongodb://localhost:27017/local');
 
@@ -29,63 +27,13 @@ router.get('/', function(req, res) {
 	res.json({ message: 'Bem-Vindo ao eCarona, seu gerenciador de caronas!' });	
 });
 
-router.route('/pais')
-   .post(function(req, res) {
-      var pais = new Pais();
-      pais.nome = req.body.nome;
-      pais.sigla = req.body.sigla;
-      pais.codigo = req.body.codigo;
-
-      pais.save(function(err) {
-         if (err) {
-	         res.send(err);
-         }
-   	 
-         res.json({ message: 'Gravado com sucesso!' });
-      });		
-   })
-   .get(function(req, res) {
-      Pais.find(function(err, pais) {
-           if (err) {
-	           res.send(err);
-           }
-         
-           res.json(pais);
-	     });
-   });
-
-//cidade
-router.route('/cidade')
-   .post(function(req, res) {
-      var cidade = new Cidade();
-      cidade.nome = req.body.nome;
-      cidade.codigoibge = req.body.codigoibge;
-    
-      cidade.save(function(err) {
-         if (err) {
-	         res.send(err);
-         }
-   	 
-         res.json({ message: 'Gravado com sucesso!' });
-      });		
-   })
-   .get(function(req, res) {
-      Cidade.find(function(err, cidade) {
-         if (err) {
-           res.send(err);
-         }
-       
-         res.json(cidade);
-	    });
-   });
 //pessoa
 router.route('/pessoa')
    .post(function(req, res) {
       var pessoa = new Pessoa();
       pessoa.token = req.body.token;
 	  pessoa.nome = req.body.nome;
-      pessoa.tipopessoa = req.body.tipopessoa;
-  	  pessoa.curtidas = req.body.curtidas;
+      pessoa.curtidas = req.body.curtidas;
   	  pessoa.endereco = req.body.endereco;
   	  pessoa.tipoServico = req.body.tipoServico;
   	  pessoa.bairro = req.body.bairro;
@@ -136,7 +84,6 @@ router.route('/pessoa/:pessoa_id')
 
 			pessoa.token = req.body.token;
 			pessoa.name = req.body.name;
-			pessoa.tipopessoa = req.body.tipopessoa;
 			pessoa.curtidas = req.body.curtidas;
 			pessoa.endereco = req.body.endereco;
 			pessoa.tipoServico = req.body.tipoServico;
@@ -174,6 +121,30 @@ router.route('/pessoa/:pessoa_id')
 		});
 	});
 
+//tipocarona
+router.route('/tipoCarona')
+   .post(function(req, res) {
+      var tipocarona = new TipoCarona();
+      tipocarona.descricao = req.body.descricao;
+      
+      tipocarona.save(function(err) {
+        if (err) {
+			res.send(err);
+        }
+   	 
+        res.json({ message: 'Gravado com sucesso!' });
+      });		
+   })
+   .get(function(req, res) {
+      TipoCarona.find(function(err, tipocarona) {
+        if (err) {
+			res.send(err);
+        }
+         
+        res.json(tipocarona);
+	   });
+   });
+	
    
 //satisfacao
 router.route('/satisfacao')
@@ -198,31 +169,6 @@ router.route('/satisfacao')
          
         res.json(satisfacao);
 	   });
-   });
-
-//tipopessoa
-router.route('/tipopessoa')
-   .post(function(req, res) {
-      var tipopessoa = new TipoPessoa();
-      tipopessoa.descricao = req.body.descricao;
-      tipopessoa.ativo = req.body.ativo;
-    
-      tipopessoa.save(function(err) {
-        if (err) {
-          res.send(err);
-        }
-   	 
-        res.json({ message: 'Gravado com sucesso!' });
-      });		
-   })
-   .get(function(req, res) {
-      TipoPessoa.find(function(err, tipopessoa) {
-        if (err) {
-          res.send(err);
-        }
-         
-        res.json(tipopessoa);
-      });
    });
 
 //estado
