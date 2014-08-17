@@ -1,9 +1,0 @@
-var mongoose	= require('mongoose');
-var Schema	= mongoose.Schema;
-
-var CidadeSchema = new Schema({
-   nome: String,
-   //uf
-});
-
-module.exports = mongoose.model('Cidade', CidadeSchema);
