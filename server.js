@@ -54,7 +54,143 @@ router.route('/pais')
            res.json(pais);
 	});
    });
-
+//cidade
+router.route('/cidade')
+   .post(function(req, res) {
+      console.log(req.body);
+      var cidade = new Cidade();
+      cidade.nome = req.body.nome;
+      cidade.codigoibge = req.body.codigoibge;
+    
+      pais.save(function(err) {
+         if (err) {
+	    res.send(err);
+         }
+   	 
+         res.json({ message: 'Gravado com sucesso!' });
+      });		
+   })
+   .get(function(req, res) {
+      Cidade.find(function(err, cidade) {
+           if (err) {
+	      res.send(err);
+           }
+         
+           res.json(cidade);
+	});
+   });
+//pessoa
+router.route('/pessoa')
+   .post(function(req, res) {
+      console.log(req.body);
+      var pessoa = new Pessoa();
+      pessoa.nome = req.body.nome;
+      pessoa.tipopessoa = req.body.tipopessoa;
+	  pessoa.curtidas = req.body.curtidas;
+	  pessoa.endereco = req.body.endereco;
+	  pessoa.tipoServico = req.body.tipoServico;
+	  pessoa.bairro = req.body.bairro;
+	 //cidade: Cidade,
+	  pessoa.dataInicial = req.body.dataInicial;
+	  pessoa.dataFinal = req.body.dataFinal;
+	  pessoa.vagasPendentes = req.body.vagasPendentes;
+	  pessoa.tipoCarona = req.body.tipoCarona;
+	  pessoa.horarioIda = req.body.horarioIda;
+	  pessoa.horarioVolta = req.body.horarioVolta;
+	  pessoa.ativo = req.body.ativo;
+	  
+      pessoa.save(function(err) {
+         if (err) {
+	    res.send(err);
+         }
+   	 
+         res.json({ message: 'Gravado com sucesso!' });
+      });		
+   })
+   .get(function(req, res) {
+      Pessoa.find(function(err, pessoa) {
+           if (err) {
+	      res.send(err);
+           }
+         
+           res.json(pessoa);
+	});
+   });
+//satisfacao
+router.route('/satisfacao')
+   .post(function(req, res) {
+      console.log(req.body);
+      var satisfacao = new Satisfacao();
+      satisfacao.curtir = req.body.curtir;
+      satisfacao.data = req.body.data;
+    
+      satisfacao.save(function(err) {
+         if (err) {
+	    res.send(err);
+         }
+   	 
+         res.json({ message: 'Gravado com sucesso!' });
+      });		
+   })
+   .get(function(req, res) {
+      Satisfacao.find(function(err, satisfacao) {
+           if (err) {
+	      res.send(err);
+           }
+         
+           res.json(satisfacao);
+	});
+   });
+//tipopessoa
+router.route('/tipopessoa')
+   .post(function(req, res) {
+      console.log(req.body);
+      var tipopessoa = new Tipopessoa();
+      tipopessoa.descricao = req.body.descricao;
+      tipopessoa.ativo = req.body.ativo;
+    
+      tipopessoa.save(function(err) {
+         if (err) {
+	    res.send(err);
+         }
+   	 
+         res.json({ message: 'Gravado com sucesso!' });
+      });		
+   })
+   .get(function(req, res) {
+      Tipopessoa.find(function(err, tipopessoa) {
+           if (err) {
+	      res.send(err);
+           }
+         
+           res.json(tipopessoa);
+	});
+   });
+//estado
+router.route('/estado')
+   .post(function(req, res) {
+      console.log(req.body);
+      var estado = new Estado();
+      estado.nome = req.body.nome;
+      estado.sigla = req.body.sigla;
+    
+      estado.save(function(err) {
+         if (err) {
+	    res.send(err);
+         }
+   	 
+         res.json({ message: 'Gravado com sucesso!' });
+      });		
+   })
+   .get(function(req, res) {
+      Estado.find(function(err, estado) {
+           if (err) {
+	      res.send(err);
+           }
+         
+           res.json(estado);
+	});
+   });
 app.use('/eCarona', router);
 
 app.listen(port);
