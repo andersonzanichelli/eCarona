@@ -4,7 +4,6 @@ var Schema	= mongoose.Schema;
 var PessoaSchema = new Schema({
 	token: String,
 	nome: String,
-	tipopessoa: String,
 	curtidas: Number,
 	endereco: String,
 	tipoServico: String, // ofereco / solicito

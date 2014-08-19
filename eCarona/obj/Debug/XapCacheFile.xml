@@ -1,0 +1,39 @@
+﻿<xapCache source="C:\Users\Edner\eCarona\eCarona\Bin\Debug\eCarona_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="19/08/2014 16:31:11">
+  <file source="C:\Users\Edner\eCarona\eCarona\obj\Debug\eCarona.dll" archivePath="eCarona.dll" lastWriteTime="19/08/2014 16:31:10" />
+  <file source="C:\Users\Edner\eCarona\eCarona\obj\Debug\pt-BR\eCarona.resources.dll" archivePath="pt-BR\eCarona.resources.dll" lastWriteTime="19/08/2014 16:31:10" />
+  <file source="C:\Users\Edner\eCarona\eCarona\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="16/08/2014 17:17:34" />
+  <file source="C:\Users\Edner\eCarona\eCarona\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="16/08/2014 17:17:34" />
+  <file source="C:\Users\Edner\eCarona\eCarona\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="16/08/2014 17:17:34" />
+  <file source="C:\Users\Edner\eCarona\eCarona\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="16/08/2014 17:17:34" />
+  <file source="C:\Users\Edner\eCarona\eCarona\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="16/08/2014 17:17:34" />
+  <file source="C:\Users\Edner\eCarona\eCarona\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="16/08/2014 17:17:34" />
+  <file source="C:\Users\Edner\eCarona\eCarona\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="16/08/2014 17:17:34" />
+  <file source="C:\Users\Edner\eCarona\eCarona\eCarona-AppIcon.png" archivePath="eCarona-AppIcon.png" lastWriteTime="17/08/2014 14:20:54" />
+  <file source="C:\Users\Edner\eCarona\eCarona\eCarona-medium.png" archivePath="eCarona-medium.png" lastWriteTime="17/08/2014 14:20:54" />
+  <file source="C:\Users\Edner\eCarona\eCarona\eCarona-small.png" archivePath="eCarona-small.png" lastWriteTime="17/08/2014 14:20:54" />
+  <file source="C:\Users\Edner\eCarona\eCarona\Images\confirma.png" archivePath="Images\confirma.png" lastWriteTime="17/08/2014 10:55:14" />
+  <file source="C:\Users\Edner\eCarona\eCarona\Images\eCarona-small.png" archivePath="Images\eCarona-small.png" lastWriteTime="17/08/2014 14:17:24" />
+  <file source="C:\Users\Edner\eCarona\eCarona\Images\splash.png" archivePath="Images\splash.png" lastWriteTime="17/08/2014 00:30:04" />
+  <file source="C:\Users\Edner\eCarona\eCarona\Images\telefone.png" archivePath="Images\telefone.png" lastWriteTime="17/08/2014 07:29:38" />
+  <file source="C:\Users\Edner\eCarona\eCarona\Toolkit.Content\ApplicationBar.Cancel.png" archivePath="Toolkit.Content\ApplicationBar.Cancel.png" lastWriteTime="16/08/2014 22:30:24" />
+  <file source="C:\Users\Edner\eCarona\eCarona\Toolkit.Content\ApplicationBar.Check.png" archivePath="Toolkit.Content\ApplicationBar.Check.png" lastWriteTime="16/08/2014 22:30:24" />
+  <file source="C:\Users\Edner\eCarona\eCarona\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="19/08/2014 16:22:38" />
+  <file source="C:\Users\Edner\eCarona\packages\Cimbalino.Phone.Toolkit.Background.3.2.3\lib\wp8\Cimbalino.Phone.Toolkit.Background.dll" archivePath="Cimbalino.Phone.Toolkit.Background.dll" lastWriteTime="17/08/2014 02:42:28" />
+  <file source="C:\Users\Edner\eCarona\packages\Cimbalino.Phone.Toolkit.3.2.3\lib\wp8\Cimbalino.Phone.Toolkit.dll" archivePath="Cimbalino.Phone.Toolkit.dll" lastWriteTime="17/08/2014 02:42:28" />
+  <file source="C:\Users\Edner\eCarona\eCarona\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="02/11/2010 16:36:16" />
+  <file source="C:\Users\Edner\eCarona\packages\Newtonsoft.Json.6.0.4\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll" archivePath="Newtonsoft.Json.dll" lastWriteTime="16/08/2014 23:14:18" />
+  <file source="C:\Users\Edner\eCarona\packages\Microsoft.Net.Http.2.2.22\lib\sl4-windowsphone71\System.Net.Http.dll" archivePath="System.Net.Http.dll" lastWriteTime="17/08/2014 08:15:56" />
+  <file source="C:\Users\Edner\eCarona\packages\Microsoft.Net.Http.2.2.22\lib\sl4-windowsphone71\System.Net.Http.Extensions.dll" archivePath="System.Net.Http.Extensions.dll" lastWriteTime="17/08/2014 08:15:56" />
+  <file source="C:\Users\Edner\eCarona\packages\Microsoft.Net.Http.2.2.22\lib\sl4-windowsphone71\System.Net.Http.Primitives.dll" archivePath="System.Net.Http.Primitives.dll" lastWriteTime="17/08/2014 08:15:56" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\Windows Phone\v8.0\Libraries\System.Windows.Interactivity.dll" archivePath="System.Windows.Interactivity.dll" lastWriteTime="25/09/2012 01:41:02" />
+  <file source="C:\Users\Edner\eCarona\packages\Cimbalino.Phone.Toolkit.3.2.3\lib\wp8\Cimbalino.Phone.Toolkit.xml" archivePath="Cimbalino.Phone.Toolkit.xml" lastWriteTime="17/08/2014 02:42:28" />
+  <file source="C:\Users\Edner\eCarona\packages\Cimbalino.Phone.Toolkit.Background.3.2.3\lib\wp8\Cimbalino.Phone.Toolkit.Background.xml" archivePath="Cimbalino.Phone.Toolkit.Background.xml" lastWriteTime="17/08/2014 02:42:28" />
+  <file source="C:\Users\Edner\eCarona\eCarona\Bin\Debug\Microsoft.Phone.Controls.Toolkit.xml" archivePath="Microsoft.Phone.Controls.Toolkit.xml" lastWriteTime="02/11/2010 16:33:34" />
+  <file source="C:\Users\Edner\eCarona\packages\Newtonsoft.Json.6.0.4\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.xml" archivePath="Newtonsoft.Json.xml" lastWriteTime="16/08/2014 23:14:18" />
+  <file source="C:\Users\Edner\eCarona\packages\Microsoft.Net.Http.2.2.22\lib\sl4-windowsphone71\System.Net.Http.xml" archivePath="System.Net.Http.xml" lastWriteTime="17/08/2014 08:15:56" />
+  <file source="C:\Users\Edner\eCarona\packages\Microsoft.Net.Http.2.2.22\lib\sl4-windowsphone71\System.Net.Http.Extensions.xml" archivePath="System.Net.Http.Extensions.xml" lastWriteTime="17/08/2014 08:15:56" />
+  <file source="C:\Users\Edner\eCarona\packages\Microsoft.Net.Http.2.2.22\lib\sl4-windowsphone71\System.Net.Http.Primitives.xml" archivePath="System.Net.Http.Primitives.xml" lastWriteTime="17/08/2014 08:15:56" />
+  <file source="C:\Users\Edner\eCarona\eCarona\Images\eCarona-AppIcon.png" archivePath="Images\eCarona-AppIcon.png" lastWriteTime="17/08/2014 14:17:24" />
+  <file source="C:\Users\Edner\eCarona\eCarona\Images\eCarona-medium.png" archivePath="Images\eCarona-medium.png" lastWriteTime="17/08/2014 14:17:24" />
+  <file source="C:\Users\Edner\eCarona\eCarona\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="19/08/2014 16:22:39" />
+</xapCache>
