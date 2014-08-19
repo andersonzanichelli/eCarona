@@ -6,14 +6,15 @@ var PessoaSchema = new Schema({
 	nome: String,
 	curtidas: Number,
 	endereco: String,
-	tipoServico: String, // ofereco / solicito
+	telefone: String,
+	tipoServico: Number, // ofereco / solicito
 	bairro: String,
 	cidade: String,
 	uf: String,
 	dataInicial: String,
 	dataFinal: String,
 	vagasPendentes: Number,
-	tipoCarona: String, // somente ida, somente volta, ida e volta
+	tipoCarona: Number, // somente ida, somente volta, ida e volta
 	horarioIda: String,
 	horarioVolta: String,
 	ativo: Number
