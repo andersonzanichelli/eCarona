@@ -26,9 +26,9 @@ router.get('/', function(req, res) {
 	res.json({ message: 'Bem-Vindo ao eCarona, seu gerenciador de caronas!' });	
 });
 
-router.route('/qrcode')
+router.route('/ok')
   .get(function(req, res){
-    res.redirect('http://api.qrserver.com/v1/create-qr-code/?color=000000&bgcolor=FFFFFF&data=http%3A%2F%2F' + req.headers.host + '%2FeCarona&qzone=1&margin=0&size=400x400&ecc=L');
+      res.send("server online");
   });
 
 //pessoa
@@ -86,14 +86,14 @@ router.route('/pessoa/lista/:token')
 
           var resultado = [];
 
-          console.log(pessoa.tipoServico);
+         // console.log(pessoa);
 
           // tem como resultado as pessoas que tem o tipo inverso do que consulta
-          for(i in pessoas) {
+          for(var i in pessoas) {
             if(pessoas[i].vagasPendentes > 0) {
               if(pessoas[i].bairro.toUpperCase() === pessoa.bairro.toUpperCase()) {
-              if(pessoa.tipoServico !== pessoas[i].tipoServico) {
-                  if(pessoa.tipoCarona == pessoas[i].tipoCarona || pessoas[i].tipoCarona === 2) {
+              if(pessoa.tipoCarona !== pessoas[i].tipoCarona) {
+                  if(pessoa.tipoServico == pessoas[i].tipoServico || pessoas[i].tipoServico === 2) {
                     resultado.push(pessoas[i]);
                   }
                 }
